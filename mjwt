@@ -1,0 +1,19 @@
+Access Token, Refresh Token 
+
+LOGIN
+  * Refresh Token -> db save() -> client
+  * Access Token -> client
+
+LOGIN 이후
+  - AccessToken 만료시
+    1. if (Access Token 만료인가?)
+    2. if (Refresh Token 유효한가?)
+    3. if (db에 Refresh Token과 client Refresh Token하고 동일한가?)
+    * 1. 2. 3.이 true일 경우 Access Token -> client
+
+  - Refresh Token 만료시
+    * LOGIN
+
+  - LOGOUT
+    * client : Access Token, Refresh Token 삭제
+    * db : Refresh Token 삭제
