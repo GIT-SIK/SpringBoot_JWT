@@ -1,4 +1,4 @@
-Access Token, Refresh Token 
+● Access Token, Refresh Token 
 
 LOGIN
   * Refresh Token -> db save() -> client
@@ -17,3 +17,7 @@ LOGIN 이후
   - LOGOUT
     * client : Access Token, Refresh Token 삭제
     * db : Refresh Token 삭제
+
+
+● data flow
+Controller <- [DTO] -> Service <- [Entity] -> Repository
