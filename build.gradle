@@ -26,12 +26,19 @@ dependencies {
 	implementation group: 'javax.servlet', name: 'jstl', version: '1.2'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 
-	/* web */
-	implementation 'org.springframework.boot:spring-boot-starter-web'
-
 	/* mybatis */
 	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.0'
 	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+
+
+	/* thymeleaf */
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+
+	/* jpa */
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+	/* web */
+	implementation 'org.springframework.boot:spring-boot-starter-web'
 
 	/* mysql */
 	implementation 'mysql:mysql-connector-java:8.0.27'
