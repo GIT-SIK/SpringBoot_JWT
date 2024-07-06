@@ -24,6 +24,7 @@ public class User {
         @Column(name ="USER_PW")
         private String userPw;
 
+        /* ModelMapper 대체 **
         public static User toEntity(UserDto userDto) {
                 return User.builder()
                         .userId(userDto.getUserId())
@@ -31,6 +32,7 @@ public class User {
                         .userRl(userDto.getUserRl()).build();
 
         }
+         */
 
 }
 

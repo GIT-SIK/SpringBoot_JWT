@@ -17,6 +17,7 @@ public class UserDto {
     @JsonIgnore
     private String userPw;
 
+   /* ModelMapper 대체 **
     public static UserDto toDTO(User user){
         return UserDto.builder()
                 .userId(user.getUserId())
@@ -24,4 +25,5 @@ public class UserDto {
                 .userRl(user.getUserRl()).build();
 
     }
+    */
 }
